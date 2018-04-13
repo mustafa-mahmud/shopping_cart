@@ -1,0 +1,42 @@
+<div class="panel panel-default">
+                        <div class="panel-heading">
+                            <li>
+                                <h4 class="panel-title panel-title2">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                        <span style='margin-right:0'>Order Date : &nbsp; </span><span class="proDate"></span><span class="proTotal"></span><span class="proAmount"></span>
+                                    </a>
+                                </h4>
+                               <div class='editSave'><span class='no'>No</span><span class='yes'>Save ?</span></div>
+                             <div class='saved'>saved successfully !</div>
+                            </li>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="table-responsive addDesign">
+                                    <table class="table table-responsive text-left">
+                                        <thead>
+                                            <tr>
+                                                <th>image</th>
+                                                <th>name</th>
+                                                <th>price</th>
+                                                <th>quantity</th>
+                                                <th>delete</th>
+                                                <th>sub total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="permanent">
+                                            
+                                            <tr id="permanentCal" class="permCal">
+                                                 <td></td>
+                                                 <td></td>
+                                                 <td class="text-capitalize">total products</td>
+                                                 <td class="totalPro">0</td>
+                                                 <td class="text-capitalize">total amount</td>
+                                                 <td class="totalAmo">0$</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

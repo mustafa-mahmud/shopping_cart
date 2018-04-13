@@ -1,0 +1,16 @@
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+#containerParent{
+    height: 100%;
+    overflow: hidden;
+}
+#containerChild{
+    height: 100%;
+}
+.creatScroll{
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}

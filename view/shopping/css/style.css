@@ -1,0 +1,860 @@
+/*
+    font-family: 'Wendy One', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Frijole', cursive;
+
+    font-family: 'Abril Fatface', cursive;
+
+    font-family: 'Abel', sans-serif;
+
+    font-family: 'Pacifico', cursive;
+
+    font-family: 'Pathway Gothic One', sans-serif;
+
+*/
+/*Font Try Class Start*/
+body{
+}
+.fonty{
+    font-size: 1.5625em;
+}
+.Wendy{
+    font-family: 'Wendy One', sans-serif;
+}
+.Poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.Frijole{
+    font-family: 'Frijole', cursive;
+}
+.Abril{
+    font-family: 'Abril Fatface', cursive;
+}
+.Abel{
+    font-family: 'Abel', sans-serif;
+}
+.Pacifico{
+    font-family: 'Pacifico', cursive;
+}
+.Pathway{
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+/*Font Try Class End*/
+#my_slider{
+    background: olive;
+    float: left;
+    width: 100%;
+    min-height: 50px;
+}
+#my_navigation{
+    background: black;
+    float: left;
+    width: 100%;
+    min-height: 50px;
+}
+#my_nav_bar{
+    background: chartreuse;
+    float: left;
+    width: 100%;
+    min-height: 50px;
+}
+#my_img_3{
+    background: red;
+    float: left;
+    width: 100%;
+    min-height: 50px;
+}
+#my_img_text{
+    background: gray;
+}
+#my_text{
+    background: #222222;
+}
+#my_text2{
+    background: #222222;
+}
+#my_text3{
+    background: #222222;
+}
+#my_para{
+    font-family: "Alegreya SC";
+    font-size: 1em;
+    color: #fff;
+    padding: 10px 0;
+}
+#my_head{
+    font-family: "Carter One";
+    font-size: 1.25em;
+    color: #cc0033;
+}
+#my_img_text2{
+    background: olive;
+}
+#my_img_text3{
+    background: yellow;
+}
+#my_img_only_text{
+    background: green;
+}
+#one_back{
+    background: url("../images/on_back.jpg") repeat 0 0 fixed;
+    padding: 70px;
+}
+#one_back > h3{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.875em;
+    color: black;
+}
+#one_back > p{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.125em;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: black;
+    margin-bottom: 20px !important;
+}
+#one_back .bride_div{
+    height: auto;
+    margin: 0 auto;
+    /*width: 96%;*/
+    /*padding: 4%;*/
+    /*min-height: 520px;*/
+    border: 10px solid #FDA30E;
+    float: left;
+}
+#one_back .men_add_women{
+    /*min-height: 520px;*/
+    width: 100%;
+}
+#one_back .men_add_women .men{
+    /*background: url("../images/wed2.jpg") no-repeat 0 0;*/
+    /*height: 460px;*/
+}
+#one_back .men_add_women .add{
+    /*height: 460px;*/
+}
+#one_back .men_add_women .women{
+    /*    background: url("../images/wed1.jpg") no-repeat 0 0;
+        height: 460px;*/
+}
+#one_back .men_add_women .add ul li:first-child{
+    /*margin-bottom: 10px;*/
+    /*height: 220px;*/
+    padding: 10px;
+    color: black;
+    text-align: center;
+    /*margin: 0 50px;*/
+    /*margin-bottom: 10px;*/
+    background: #FDA30E;
+}
+#one_back .men_add_women .add ul li:last-child{
+    /*margin-top: 10px;*/
+    /*height: 220px;*/
+    padding: 10px;
+    color: black;
+    text-align: center;
+    /*margin: 0 50px;*/
+    /*margin-top: 10px;*/
+    background: #FDA30E;
+}
+#one_back .men_add_women .add ul li div{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid white;
+    height: 100%;
+}
+#one_back .men_add_women .add ul li div p{
+    width: 150px;
+    padding: 7px;
+    box-shadow: 2px 0 1px 1px black;
+    text-align: center;
+    margin: 0 auto !important;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#one_back .men_add_women .add ul li div p:active{
+    box-shadow: 0px 0 0px 0px white;
+}
+#one_back .men_add_women .add ul li div i{
+    font-size: 1.6875em;
+    color: red;
+    font-style: italic;
+    font-family: 'Frijole', cursive;
+    display: inline-block;
+    margin: 10px;
+}
+#my_cart_production{
+    /*background: green;*/
+    padding: 10px 0;
+    float: left;
+    width: 100%;
+    min-height: 50px;
+}
+#my_cart{
+    background: pink;
+}
+#my_producttion{
+    /*background: chocolate;*/
+}
+.my_product_item{
+    margin-bottom: 10px !important;
+}
+.user_pro > .item{
+    padding: 10px;
+}
+.item span , del{
+    line-height: 30px;
+    font-family: 'Pacifico', cursive;
+}
+.item del{
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+#my_all_product{
+    /*background: red;*/
+    position: relative;
+}
+#catagories{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.all_pro_catagories{
+    cursor: pointer;
+}
+#catagories_items{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    background: black;
+    z-index: 9999;
+    display: none;
+}
+#catagories_items ul li{
+    margin-bottom: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+#catagories_items ul li:hover{
+    border-bottom: 1px solid chocolate;
+}
+#catagories_items ul li a{
+    color: white;
+}
+.my_product_item_child{
+    min-height: 340px;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+    float: left;
+    width: 90%;
+    padding: 2%;
+    position: relative;
+}
+.products{
+    /*background: olive;*/
+    height: 750px;
+}
+.products ul{
+    margin: 0 !important;
+    float: left;
+}
+.products ul li{
+    background: red;
+    float: left;
+    display: inline-block;
+}
+#product_item{
+}
+.clone_class{
+    z-index: 999999!important;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+}
+.bounces{
+}
+.product_item_class{
+    position: relative;
+    height: auto;
+    padding: 10px;
+    border: 1px solid chocolate;
+    margin-bottom: 20px;
+}
+.product_item_class:hover{
+    border: 1px solid red;
+}
+.status{
+    display: inline-block;
+    float: left;
+    font-family: 'Wendy One', sans-serif;
+}
+.product_head{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.375em;
+    font-weight: bold;
+    color: chocolate;
+}
+.price{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25em;
+}
+.my_button{
+    font-family: 'Frijole', cursive;
+}
+p.animated-button.thar-three {
+    font-family: 'Frijole', cursive;
+    color: white;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid #F7CA18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    background: black;
+}
+p.animated-button.thar-three:hover {
+    color: #000 !important;
+    background-color: transparent;
+    text-shadow: nthree;
+}
+p.animated-button.thar-three:hover:before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+}
+p.animated-button.thar-three:before {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: chocolate !important;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.for_bounce{
+    width: 95%;
+    top: 0 !important;
+    background: rgba(54, 25, 25, .5); 
+    z-index: 300;
+    position: absolute;
+}
+.view{
+    display: inline-block;
+    padding: 5px 10px;
+    background: black;
+    color: white;
+    position: relative;
+    border: 1px solid white;
+    width: 100%;
+    text-decoration: none;
+}
+.view:hover{
+    color: black;
+    background: white;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.logSingUp li a{
+    cursor: pointer;
+}
+.my_product_item_child .pro_img{
+    width: 80%;
+    display: inline-block;
+    cursor: pointer;
+}
+#animated_div{
+    background: url("../images/coupons.jpg") no-repeat center center;
+    padding: 120px 0;
+    color: white;
+}
+#animated_div .info_user{
+    margin-top: 7%;
+    padding: 20px;
+    display: none;
+}
+#animated_div .info_user p{
+    color: #FDA30E;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+#animated_div .info_user span{
+    font-size: 2.1875em;
+    color: #FDA30E;
+    display: inline-block !important;
+}
+#animated_div .info_buying{
+}
+#animated_div .info_buying .promoting{
+    /*width: 30%;*/
+    /*margin-left: 1%;*/
+    float: left;
+    /*height: 400px;*/
+    display: inline-block;
+    /*padding: 2%;*/
+    display: none;
+}
+#animated_div .info_buying .promoting i{
+    border-radius: 100%;
+    background:  #186a3b  ;
+    color: white;
+    display: inline-block;
+    font-size: 1.875em;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+}
+#animated_div .info_buying .promoting span{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px !important;
+}
+#animated_div .info_buying .promoting p{
+    text-align: justify;
+    margin-bottom: 20px !important;
+}
+#my_back_video {
+    /*background: cyan;*/
+    float: left;
+    width: 100%;
+    height: 400px;
+}
+#my_address_social{
+    background: #222222;
+    float: left;
+    width: 100%;
+    min-height: 50px;
+    padding: 10px 0;
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding: 100px 10px;
+    border-bottom: 2px solid black;
+}
+#my_address{
+    /*background: olive;*/
+    display: none;
+}
+#my_address h3 {
+    padding: 10px;
+    /* background: #1c2833; */
+    color: black;
+    margin-top: 50px; //important moved from here for responsiveness metter;
+    /*font-size: 1.875em;*/
+    font-weight: bold;
+}
+#my_address h3 span{
+
+}
+#my_address ul li{
+    margin-bottom: 20px;
+    text-align: left !important;
+    color: white;
+}
+#my_address ul li p{
+    word-wrap: break-word;
+    margin-top: 45px !important;
+    color: white;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+#my_address ul li p:hover i{
+    border: 1px solid red;
+    color: white;
+}
+#my_address ul li p i{
+    padding: 15px;
+    border-radius: 100%;
+    border: 1px solid #9c640c;
+    display: inline;
+    color: black;
+}
+#my_address ul li p span{
+    display: inline;
+    font-family: 'Pathway Gothic One', sans-serif;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+#my_social{
+    /*background: blueviolet;*/
+}
+#my_social .img_back{
+    /*height: 400px;*/
+    /*background: url("../images/Toolkitplus.png") no-repeat -100px -60px;*/
+    /*position: relative;*/
+    /*float: left;*/
+    /*background: blue;*/
+    display: none;
+}
+#my_social .img_back span {
+    /*position: absolute;*/
+    /*bottom: -25px;*/
+    width: 100%;
+    margin: 0 auto;
+    color: white !important;
+    /*left: 30px;*/
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+#my_social .socialism{
+    /*width: 60%;*/
+    /*height: 400px;*/
+    /*float: left;*/
+    /*background: yellowgreen;*/
+    padding-left: 10%;
+    display: none;
+}
+#my_social .socialism .socials_icon{
+    width: 100%;
+    float: left;
+    height: 100px;
+}
+#my_social .socialism .socials_icon ul li{
+    display: inline-block;
+    float: left;
+    width: 24%;
+    margin-right: 1%;
+    border: 1px solid chocolate;
+    background: red;
+}
+#my_social .socialism .socials_icon ul li:last-child{
+    margin-right: 0;
+}
+#my_social .socialism .socials_icon ul li i span{
+    display: inline-block;
+}
+#my_social .socialism .socials_icon ul li i{
+    font-size: 4.375em;
+    color: black;
+}
+#my_social .socialism .some_text{
+    margin-top: 20px;
+    width: 100%;
+    float: left;
+}
+#my_social .socialism .some_text ul li{
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted yellowgreen;
+    background: blue;
+    background: url("../images/text-bac.png") no-repeat 0 0;
+    width: 100%;
+    color: white;
+    float: left;
+    text-shadow: 0 2px 1px 2px black;
+    padding: 10px 0;
+}
+#my_social .socialism .some_text ul li i{
+    font-size: 1.875em;
+    color: yellowgreen;
+    margin-right: 20px;
+}
+#my_social .socialism .some_text ul li span{
+    color: black;
+    position: relative;
+    top: -10px;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+#my_social .socialism .some_text img{
+    float: left;
+    display: inline-block;
+    width: 49%;
+    margin-left: 1%;
+}
+#my_footer{
+    /*background: chocolate;*/
+}
+#my_footer p{
+    color: black;
+}
+#my_copyright{
+    background: #222222;
+    min-height: 0px !important;
+    padding: 10px 0;
+}
+#my_mini_menu{
+    display: inline-block;
+    float: left;
+    background: black;
+}
+#my_mini_user{
+    display: inline-block;
+    float: right;
+}
+.my_min_wraper{
+    min-height: 50px;
+}
+.search_filter_like{
+    /*background: green;*/
+    word-wrap: break-word;
+    padding: 15px;
+}
+.search{
+}
+.filter{
+}
+.user_like_pro{
+}
+.user_like{
+    height: 400px;
+}
+.user_pro{
+    width: 100% !important;
+    border: 1px solid chocolate;
+    margin-bottom: 20px;
+}
+.user_pro:hover{
+    border: 1px solid red;
+}
+//cart button design
+a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size:0.875em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+    color: #FFF;
+    text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+    height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size:0.875em;
+    border-radius: 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.video-hero--content{
+    padding: 20px 0;
+}
+.video-hero--content h3{
+    font-family: 'Frijole', cursive;
+}
+.video-hero--content p{
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+/* Victoria Buttons */
+
+a.animated-button.victoria-two {
+    border: 2px solid #D24D57;
+}
+a.animated-button.victoria-two:hover{
+    background: #D24D57 !important;
+}
+.button--bubble__container a{
+    font-family: 'Frijole', cursive;
+    font-size: 1em;
+}
+/* Font Style */
+.styleText{
+    background: #88D35E;
+    padding: 10px;
+    font-size: 2.8125em;
+    display: inline-block;
+    color: white !important;
+    border-bottom: 3px solid gray;
+    text-shadow:2px 2px black;
+}
+/* Bootstrap Edited */
+.panel-primary > .panel-heading{
+    background-color: #222222 !important;
+    border-color: #222222 !important;
+}
+.panel-primary{
+    border-color: #222222 !important;
+}
+ul , ol{
+    margin-bottom: 0px !important;
+}
+iframe{
+    border: none;
+}
+/* this is for Product adding + deleting */
+.checkout .table thead tr th{
+    text-align: center !important;
+    text-transform: capitalize;
+    background: #F2F2F2;
+    font-size: 1em;
+}
+.stCho{
+    background: chocolate;
+    color: white;
+    font-size: 1.3em;
+}
+#cartModal table tr{
+    background: #0760B8;
+} 
+#cartModal table tr td{
+    border-bottom: 1px solid black;
+    height: 50px;
+    line-height: 40px !important;
+}
+#clonePro tr td img{
+    width: 70px;
+    height: 50px;
+}
+.glyphicon-minus:hover{
+    background: red;
+    color: white;
+}
+.glyphicon-plus:hover{
+    background: red;
+    color: white;
+}
+.quantify{
+    /*position: relative;*/
+}
+.quantify span{
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+.subtotal{
+    background: #272822;
+    color: white;
+}
+.glyphicon-trash{
+    /*line-height: 40px;*/
+}
+.delete{
+    cursor: pointer;
+}
+.delete:hover{
+    color: red;
+}
+.prods{
+    width: 20%;
+    height: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: chocolate;
+}
+.ckClone{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+/*signUp & logIn*/
+.heart{
+    width: 64px;
+    height: 64px;
+    background: url("../images/heart.png") no-repeat;
+    display: inline-block;
+    position: relative;
+    top: -14px;
+}
+.heartIn{
+    position: relative;
+    top: 15px;
+    font-size: 20px;
+}
+/*product add + del popup*/
+.samePerma {
+    margin-right: 30px;
+    box-shadow: 2px 4px 3px 2px black !important;
+    outline: none !important;
+}
+.samePerma:active{
+    box-shadow: 0px 0px 0px 0px white !important;
+}
+.saveTemp {
+    box-shadow: 2px 4px 3px 2px black !important;
+    outline: none !important;
+}
+.saveTemp:active{
+    box-shadow: 0px 0px 0px 0px white !important;
+}
+#msg{
+    display: inline-block;
+}
+h3 a.popover{
+    left: -73px;
+}
+
+/*Main Notify*/
+@keyframes shadowPulse {
+    0% {
+        transform:rotate(40deg);
+    }
+    100%{
+        transform:rotate(-40deg)
+    }
+}
+.shadow-pulse {
+    animation-name: shadowPulse;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.mainNotify {
+    display: inline-block;
+    position: absolute;
+    right: 160px;
+    width: 32px;
+    height: 32px;
+    top: 12px;
+    background: url("../images/mainNotify.png") no-repeat 0 0;
+}
+.bell {
+    position: relative;
+    top: -7px;
+    right: 0px;
+    left: 15px;
+}
+#bellring{
+    width: 0;
+    height: 0;
+}

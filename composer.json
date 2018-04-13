@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "psr-4":{
+            "cart\\":"src",
+            "admin\\":"src/shopping"
+        }
+    }
+}

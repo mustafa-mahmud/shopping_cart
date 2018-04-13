@@ -1,0 +1,38 @@
+<div class="panel panel-default">
+                        <div class="panel-heading">
+                            <li>
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                        <span style='margin-right:0'>Order Date : &nbsp; </span><span class="proDate"></span><span class="proTotal"></span><span class="proAmount"></span>
+                                    </a>
+                                </h4>
+                            </li>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="table-responsive addDesign">
+                                    <table class="table table-responsive text-left">
+                                        <thead>
+                                            <tr>
+                                                <th>image</th>
+                                                <th>name</th>
+                                                <th>price</th>
+                                                <th>quantity</th>
+                                                <th>sub total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="permanent">
+                                            
+                                            <tr id="permanentCal">
+                                                <td></td>
+                                                <td></td>
+                                                <td>Total</td>
+                                                <td class="totalPro">0</td>
+                                                <td class="totalAmo">0$</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

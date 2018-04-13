@@ -1,0 +1,143 @@
+#falsely{
+    width: 100%;
+    height: 300px;
+    background: olive;
+    float: left;
+}
+#my_product{
+    padding: 100px 0px;
+    /*background: olive;*/
+    float: left;
+}
+#my_all_product > h3{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.875em;
+    color: black;
+}
+#my_all_product > p{
+     padding: 10px;
+    text-align: center;
+    font-size: 1.125em;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: black;
+    margin-bottom: 20px !important;
+}
+#my_all_product h3 span i{
+    font-size: 2.8125em;
+    color: red;
+}
+.product{
+    float: left;
+}
+#my_cart{
+    background: rgba(0,0,0,0.61);
+    height: 80px;
+    top: 100px;
+    float: left;
+    position: fixed;
+    z-index: 99;
+    left: 0px;
+}
+.cart_details{
+    height: 80px;
+    float: left;
+}
+.clone_html_mini span{
+    font-size: 0.875em;
+    display: inline-block;
+    color: gray;
+}
+.total{
+    position: relative;
+    top: -10px;
+    font-weight: bold;
+    display: inline-block;
+}
+.add_btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: chocolate !important;
+    cursor: pointer;
+}
+.clone_html_mini del{
+    display: none;
+}
+.clone_html_mini{
+    width: 180px;
+    float: left;
+    word-wrap: break-word;
+}
+.clone_html_mini img{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 5px;
+}
+.cart{
+    width: 110px;
+    height: 80px;
+    background: black;
+    float: left;
+    color: white;
+    word-wrap: break-word;
+    border-left: 5px solid green;
+}
+.cart div {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 21%;
+}
+.cart div span{
+    font-size: 0.875em;
+}
+.cart_icon{
+}
+.my_product{
+
+}
+.products{
+    padding: 0 10px !important;
+}
+.clone_class{
+    position: absolute;
+    z-index: 99999999;
+}
+.clone_class .btn{
+    /*display: none;*/
+}
+.mini_product{
+    float: left;
+}
+.cart_details ul li{
+    color: gray;
+    height: 80px;
+    float: left;
+    margin-right: 2px;
+    background: rgba(0,0,0,0.61);
+    font-size: 0.875em;
+    position: relative;
+}
+.clone_html_mini span:first-child{
+    display: inline-block;
+    margin-top: 8px;
+    display: none;
+}
+.cross {
+    float: right;
+    color: white !important;
+    font-size: 1.125em !important;
+    display: inline-block;
+    cursor: pointer;
+}
+.cross:hover{
+    color: red !important;
+}
+.mCustomScrollbar{ -ms-touch-action: inherit; touch-action: inherit; /* MSPointer events – direct all pointer events to js */ }
+.mCustomScrollbar.mCS_no_scrollbar{ -ms-touch-action: inherit; touch-action: inherit; }
+.photo{
+    border: 1px solid red;
+    display: block;
+}

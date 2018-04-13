@@ -1,0 +1,104 @@
+p{
+    margin: 0 !important;
+}
+/*=========nav========*/
+.homePage a{
+    margin-left: 5px !important;
+    display: inline-block !important;
+        
+}
+/*=========head========*/
+#headerContact{}
+.headerInfo{
+    /*background: red;*/
+    background: url("../images/backLaptop.jpg") no-repeat center;
+    height: 200px;
+    display: table;
+    width: 100%;
+}
+.middleInfo{
+    /*background: red;*/
+    text-align: center;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+.shCart{
+    font-size: 1.7em;
+    text-shadow: 3px 5px 0px rgba(99, 99, 99, 1);
+    color: black;
+    font-weight: bold;
+}
+.middleInfo span{
+    padding: 10px;
+    background: rgba(0,0,0,0.6);
+    display: inline-block;
+}
+.middleInfo span p{
+    color: white;
+    margin: 0 !important;
+}
+/*=========contact========*/
+#emailPhone{
+}
+#emailPhone span{
+    color: white;
+}
+#emailPhone span i{
+    color: black;
+}
+.phoneContact{
+    background: blue;
+    display: table;
+    height: 140px;
+}
+.emailContact{
+    background: yellow;
+    display: table;
+    height: 140px;
+}
+.mobile{
+    padding: 10px;
+    background:  #212f3c;
+    color: black;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.emailUs{
+    padding: 10px;
+    background: #943126;
+    color: black;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+/*=========send mail========*/
+#send{}
+.sendMail{
+     background: black;
+     min-height: 100px;
+     color: white;
+     padding: 30px;
+}
+.sendMail ul{}
+.sendMail ul li{}
+.sendMail ul li input{
+    border-radius: 0 !important;
+    color: black;
+}
+.sendMail ul li textarea{
+    width: 100%;
+    padding-left: 10px;
+    height: 150px;
+}
+.urMsg .form-group{
+    margin-bottom: 0 !important;
+    color: black;
+}
+/*=========map========*/
+#map{}
+.mapContact{
+    background: green;
+    height: 450px;
+}

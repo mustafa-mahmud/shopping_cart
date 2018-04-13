@@ -1,0 +1,35 @@
+tbody tr{
+    cursor: pointer;
+}
+.img{
+    padding: 0 !important;
+}
+.img img{
+    width: 100px;
+    vertical-align: middle;
+    height: 56px
+}
+.mainParent{
+    background: white;
+}
+.childParent {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    position: relative;
+    background: white;
+}
+.topStyle{
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    color: black;
+    top: -45px;
+    left: 45px;
+    background: white;
+    position: absolute;
+}
+.topStyle p{
+    margin: 0;
+    font-size: 20px;
+}

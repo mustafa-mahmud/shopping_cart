@@ -1,0 +1,261 @@
+.adminMenu i{
+    text-shadow: none;
+    color: black;
+    font: 20px 'Museo700';
+    font-style: italic;
+}
+.mainContent h3{
+    font-size: 22px;
+    font-weight: bold;
+    background: url("../images/borderLong.png") no-repeat bottom left;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.productEdit td img{
+    width: 45px;
+    height: 20px;
+}
+thead tr th{
+    text-align: center;
+}
+tbody tr td{
+    background: #202B33;
+    text-align: center;
+    font-size: 14px;
+}
+.mainParent{
+    background: white;
+    color: black !important;
+}
+.addProduct{
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    /*background: red;*/
+    position: relative;
+}
+.topInfoAdd{
+    background: white;
+    display: inline-block;
+    color: black;
+    position: relative;
+    top: -60px;
+    left: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    font-family: Frijole;
+    font-size: 20px;
+}
+.topInfoAdd span:nth-child(2){
+    font-family: Abril;
+}
+.inputResult{
+    text-align: center !important;
+    font-family: Abel;
+    font-size: 19px;
+}
+.table .img{
+    padding: 0px !important;
+}
+.table .img img{
+    width: 100px;
+    height: 56px;
+    vertical-align: middle;
+}
+.table .del{
+    cursor: pointer;
+}
+.table .del:hover span{
+}
+.table .edit{
+    cursor: pointer;
+}
+.table .edit:hover span{
+    color: green;
+}
+/*checkbox field design*/
+.ckBox{
+    position: relative;
+    width: 70px;
+    overflow: hidden;
+    display: flex;
+    margin-left: 5px;
+    height: 40px;
+    float: left;
+}
+input[name=singleDelCk]{
+    /*margin-left: -15%;*/
+}
+.ckBox label{
+    margin-left: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.myRadio{
+    cursor: pointer;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 0;
+    top: 5px;
+    background: #000;
+    border: 3px solid white;
+}
+.myRadio i{
+    display: block;
+    color: white;
+    text-align: center;
+    margin-top: 4px;
+    display: none;
+}
+.ckBox input:checked ~ .myRadio i{
+    display: block;
+}
+.status{
+    padding: 0 !important;
+    width: 170px !important;
+}
+.status > div{
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+}
+.table tr:hover td{
+    background: #003333;
+}
+.myBrowse{
+    position: relative;
+}
+.status input[type=radio]{
+    opacity: 0 !important;
+}
+.caption > p{
+    border-top: 1px solid white;
+    background: black;
+    padding: 10px 0;
+    color: white;
+    margin: 0 !important;
+}
+[name=proImageEdit]{
+    opacity: 0;
+    position: absolute;
+}
+span[class^="err"]{
+    color: red;
+    font:0.6625em 'Pathway Gothic One', sans-serif;
+    display: none;
+}
+.delAllNotAllowd > *{
+    cursor: not-allowed !important;
+    opacity: 0.3 !important;
+}
+.selectDelAll label{
+    cursor: pointer;
+    margin: 0 !important;
+    display: block;
+}
+.deleteAll{
+    opacity: 0;
+}
+.allDelete{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: black;
+    border: 2px solid white;
+    position: relative;
+    top: 5px;
+}
+.allDelete i{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 12px !important;
+    display: none;
+}
+.selectDelAll input:checked ~ .allDelete i{
+    display: block;
+}
+.singleDel{
+    margin: 0 !important;
+    display: block;
+    cursor: pointer;
+}
+.singleDelDesign{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: black;
+    border: 2px solid white;
+    display: inline-block;
+}
+.singleDelDesign i{
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    display: none;
+}
+.singleDel input:checked ~ .singleDelDesign i{
+    display: block;
+}
+.singleDel input{
+    opacity: 0;
+}
+#saveButton{
+    width: 125px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    right: -125px;
+    color: black;
+    vertical-align: middle;
+    transform: rotate(-90deg);
+    text-align: center;
+}
+#saveAll , #cancelAll{
+    padding: 10px;
+    background: chocolate;
+    padding-top: 6px;
+    color: white;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.87);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.87);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.87);
+    cursor: pointer;
+}
+#saveAll{
+    position: relative;
+    top: 20px;
+}
+#saveAll:hover , #cancelAll:hover{
+    z-index: 9999 !important;
+    background: #660000;
+    color: #666600;
+}
+#cancelAll:hover #saveAll{
+    background: white !important;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+#saveButton i{
+    color: black;
+    font-size: 25px;
+    position: relative;
+}
+#saveAll:hover i:first-child{
+    color: white;
+}
+#cancelAll:hover i:last-child{
+    color: white;
+}
+#saveMsg{
+    display: none;
+    font-weight: bold;
+    color: green;
+}
+.borderClass{
+    background: chocolate;
+}
+.borderClassRed{
+    border: 3px solid red;
+}
+.borderClassGreen{
+    border: 3px solid green;
+}

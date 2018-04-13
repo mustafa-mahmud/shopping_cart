@@ -1,0 +1,161 @@
+.productInfo{
+    background:  #cb4335 ;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.boxSquire{
+    display: inline-block;
+    padding: 30px;
+    background:  #145a32 ;
+}
+.boxSquire span{
+    font-size: 45px;
+    text-shadow: 5px 5px 1px rgba(0, 0, 0, 1);
+}
+.pro , .pro2{
+    font-size: 20px;
+    background: black;
+    height: 40px;
+    padding: 20px
+}
+.proDown{
+    font-size: 20px;
+    background: black;
+    display: none;
+    height: 40px;
+    padding: 20px
+}
+.boxInfo{
+    float: right;
+}
+.boxInfo span:first-child{
+    font-family: Poppins;
+}
+.boxInfo span:last-child{
+    display: inherit;
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.boxInfo span:last-child i{
+    position: relative;
+}
+.boxInfo span i{
+    font-family: Abril;
+}
+.mainParent{
+    background: white;
+    color: black !important;
+}
+.addProduct{
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    /*background: red;*/
+    position: relative;
+}
+.topInfoAdd{
+    background: white;
+    display: inline-block;
+    color: black;
+    position: relative;
+    top: -60px;
+    left: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    font-family: Frijole;
+    font-size: 20px;
+}
+.topInfoAdd span:nth-child(2){
+    font-family: Abril;
+}
+.addInput{
+}
+input{
+    font-family: Pathway;
+}
+input[name=product]{
+    padding-right: 50px;
+}
+.verifyOk{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 18px;
+    color: green;
+    display: none;
+}
+.verifyWrong{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 18px;
+    color: red;
+    display: none;
+}
+.inputResult{
+    text-align: center !important;
+    font-family: Abel;
+    font-size: 19px;
+}
+button[data-info=myAlert]{
+    position: absolute;
+    top: -1000px;
+}
+.classBorder{
+    border: 1px solid red;
+}
+.errName , .errPrice , .errImg{
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    font-style: italic;
+    color: red;
+    font-family: Pathway;
+}
+[class^=err]{
+    display: none;
+}
+input[disabled=disabled] + .custom-file-label{
+    background: #e9ecef !important;
+}
+.inputResult ul li:nth-child(even){
+    background:  #85c1e9 ;
+}
+.inputResult ul li:nth-child(odd){
+    background:  #d2b4de ;
+}
+input[type=submit]:focus{
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+.active{
+    background: black !important;
+    color: white !important;
+}
+thead{
+    background: black;
+    color: white;
+}
+tbody tr{
+}
+tbody tr td img{
+    width: 50px;
+    height: 40px;
+}
+/*checkbox design*/
+[name=show]{
+    position: absolute;
+    left: -9999px;
+}
+form+button{
+    position: absolute;
+    left: -999999px;
+}
+.ckOk{
+    opacity: 0;
+}
+.active .ckOk{
+    opacity: 1;
+}
+.custom-file-label{
+    justify-content: left !important;
+}

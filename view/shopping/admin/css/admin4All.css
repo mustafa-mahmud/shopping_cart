@@ -1,0 +1,311 @@
+body{
+    font-size: 13px !important;
+}
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+#myMain{
+}
+.menu{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../images/menu.jpg");
+}
+.mainMenu{
+}
+.mainMenu h1{
+}
+.menuHead{
+    color: white !important;
+}
+.adminImg{
+    border-radius: 50%;
+}
+.menuHead span{
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+    display: block;
+}
+.menuHead ul{
+    margin-top: 30px;
+}
+.menuHead ul li{
+    padding: 13px;
+    border-radius: 5px;
+    color: black;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.menuHead ul li a{
+    display: block;
+}
+.menuHead ul li.myActive{
+    background: white;
+    -webkit-box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+}
+.myActive2{
+    background: white;
+    -webkit-box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+}
+.menuHead ul li:hover{
+    background: white;
+    -webkit-box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+}
+.menuHead ul li:hover a{
+    text-shadow: 0px 1px 1px #4d4d4d !important;
+    color: black !important;
+}
+.menuHead ul li.myActive a{
+    text-shadow: 0px 1px 1px #4d4d4d !important;
+    color: black !important;
+}
+.myActive2 a{
+    text-shadow: 0px 1px 1px #4d4d4d !important;
+    color: black !important;
+}
+.menuHead ul li.myActive .fa{
+    font-size: 25px !important;
+    text-shadow: 0px 1px 1px #4d4d4d !important;
+    color: black !important;
+}
+.menuHead ul li.myActive2 .fa{
+    font-size: 25px !important;
+    text-shadow: 0px 1px 1px #4d4d4d !important;
+    color: black !important;
+}
+.menuHead img{
+    -moz-box-shadow: -1px 0px 17px #000000;
+    -webkit-box-shadow: -1px 0px 17px #000000;
+    box-shadow: -1px 0px 17px #000000;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.menuHead ul li.parentLi:active{
+    border-bottom: 1px solid black;
+}
+.myDeshBoard{
+    padding: 10px 0;
+    /*background: red;*/
+}
+.smallMenuBar{}
+ul[my-data=chaildUl]{
+    margin: 10px !important;
+    padding: 10px !important;
+}
+ul[my-data=chaildUl] li{
+    padding: 5px 0 !important;;
+    text-align: center;
+    width: 90%;
+    border-radius: 0 !important;
+    margin: 5px;
+}
+.parentLi{
+    position: relative;
+}
+.parentLi2{
+    position: relative;
+}
+.arrowDeg:after{
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    border: 6px solid transparent;
+    border-color: black transparent transparent transparent;
+} 
+.arrowDeg2:after{
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    border: 6px solid transparent;
+    border-color: transparent transparent black transparent;
+} 
+.arrowDegg:after{
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    border: 6px solid transparent;
+    border-color: black transparent transparent transparent;
+} 
+.arrowDegg2:after{
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    border: 6px solid transparent;
+    border-color: transparent transparent black transparent;
+} 
+.desh{}
+.myRound{
+    border-radius: 100%;
+    background: white;
+    display: inline-block;
+    padding: 12px;
+    color: black !important;
+    cursor: pointer;
+}
+.myRound:hover{
+    background: red;
+    color: white !important;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+}
+.info{
+    position: relative;
+    top: 5px;
+    left: -10px;
+}
+.smallRound{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    position: absolute;
+    top: -3px;
+    left: 10px;
+    font-size: 13px !important;
+}
+.logSearch{
+    display: flexbox;
+    flex-direction: row;
+}
+.inputHere input{
+    position: relative;
+    right: -22px;
+}
+.inputHere i, .inputHere span{
+    border-right: 1px solid red;
+}
+.searching{}
+.notify{}
+.notify b{
+    position: relative;
+    top: -13px;
+    color: red;
+}
+.logIcon{}
+.logSearch input[name=search]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    color: white;
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.logSearch input[name=search]:focus{
+    width: calc(100% - 150px);
+}
+.content{
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px;
+    -webkit-box-shadow: -4px 0px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 0px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: -4px 0px 3px 0px rgba(0,0,0,0.75);
+    background-image: url("../images/content.jpg");
+}
+.mainContent{
+    height: 900px;
+    color: white !important;
+}
+/*Deshboard crossbar create class*/
+.desh span{
+    display: inline-block;
+    padding: 13px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.desh span:hover{
+    background: red;
+    color: white !important;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.desh i{
+    position: relative;
+    top: -17px;
+    left: 5px;
+}
+.cross1 , .cross2 , .cross3{
+    width: 25px;
+    height: 5px;
+    margin-bottom: 4px;
+    display: block;
+    background: black;
+}
+.cross3{
+    margin-bottom: 0 !important;
+}
+.change .cross1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 5px);
+    transform: rotate(-45deg) translate(-7px, 5px);
+}
+.change .cross2 {opacity: 0;}
+.change .cross3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -6px);
+    transform: rotate(45deg) translate(-8px, -6px);
+}
+/*=====Side  small menu bar ====*/
+.sideMenu{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 9;
+}
+.closeMe{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: table;
+    background: black;
+    cursor: pointer;
+    padding: 0px 5px;
+}
+.closeMe i{
+    position: relative;
+    top: -2px;
+}
+.closeMe:hover{
+    background: gray;
+    font-weight: bold;
+    color: black;
+}
+/*=====Footer=====*/
+#my_footer{
+
+}
+.myFooter{
+    background: #272822;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: -10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.myFooter p{
+    margin-bottom: 0 !important;
+}
