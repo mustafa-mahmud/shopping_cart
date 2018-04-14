@@ -33,3 +33,33 @@ tbody tr{
     margin: 0;
     font-size: 20px;
 }
+/*=====Fixed Right Side Bar====*/
+.rightSideBar{
+    position: fixed;
+    top: 40%;
+    right: 0;
+    width: 150px;
+    background: #272822;
+    padding: 10px;
+    -webkit-box-shadow: -6px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -6px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -6px 6px 5px 0px rgba(0,0,0,0.75);
+}
+.rightSideBar p{
+    margin-bottom: 0px !important;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+.userUpdate{
+    /*background: blue;*/
+}
+.active{
+    /*background: green;*/
+}
+.deactive{
+    /*background: pink;*/
+}
+.delete{
+    /*background: red;*/
+}

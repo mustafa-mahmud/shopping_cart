@@ -118,26 +118,37 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
+        <!-----Fixed Bar (input/active/deactice/delete)-------->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="rightSideBar">
+                    <input id="userUpdate" name="userUpdate" class="userUpdate" placeholder="S.L" />
+                    <p class="active">active</p>
+                    <p class="deactive">de-active</p>
+                    <p class="delete">delete</p>
+                </div>
+            </div>
+        </div>
         <script src="js/bootstrap.js"></script>
         <script src="js/admin4All.js"></script>
         <script src="js/memberEdit.js"></script>
         <script>
-                                    //make large width after click on Deshboard
-                                    function myCross(ev) {
-                                        document.getElementById("myMenu").classList.toggle("sr-only");
-                                        document.getElementById("myMain").classList.toggle("col-sm-12");
-                                        document.getElementById("myMain").classList.toggle("col-md-12");
-                                        document.getElementById("myMain").classList.toggle("col-lg-12");
-                                        document.getElementById("myMain").classList.toggle("col-xl-12");
-                                        ev.classList.toggle("change");
-                                    }
-                                    //work on side menu bar 
-                                    function showMe() {
-                                        document.getElementsByClassName("sideMenu")[0].style.width = "100%";
-                                    }
-                                    function hideMe() {
-                                        document.getElementsByClassName("sideMenu")[0].style.width = "0%";
-                                    }
+            //make large width after click on Deshboard
+            function myCross(ev) {
+                document.getElementById("myMenu").classList.toggle("sr-only");
+                document.getElementById("myMain").classList.toggle("col-sm-12");
+                document.getElementById("myMain").classList.toggle("col-md-12");
+                document.getElementById("myMain").classList.toggle("col-lg-12");
+                document.getElementById("myMain").classList.toggle("col-xl-12");
+                ev.classList.toggle("change");
+            }
+            //work on side menu bar 
+            function showMe() {
+                document.getElementsByClassName("sideMenu")[0].style.width = "100%";
+            }
+            function hideMe() {
+                document.getElementsByClassName("sideMenu")[0].style.width = "0%";
+            }
         </script>
     </body>
 </html>
