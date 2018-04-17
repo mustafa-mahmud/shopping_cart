@@ -104,6 +104,90 @@ and open the template in the editor.
                                                         <td>ip</td>
                                                         <td>lastLogin</td>
                                                     </tr>
+                                                    <tr>
+                                                        <td>s.l</td>
+                                                        <td>name</td>
+                                                        <td class="img"><img src="images/de63a33efc4c828928755cf2eb036b38dol.jpg" /></td>
+                                                        <td>email</td>
+                                                        <td>country</td>
+                                                        <td>pass</td>
+                                                        <td>gender</td>
+                                                        <td>con</td>
+                                                        <td>status</td>
+                                                        <td>created</td>
+                                                        <td>ip</td>
+                                                        <td>lastLogin</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>s.l</td>
+                                                        <td>name</td>
+                                                        <td class="img"><img src="images/de63a33efc4c828928755cf2eb036b38dol.jpg" /></td>
+                                                        <td>email</td>
+                                                        <td>country</td>
+                                                        <td>pass</td>
+                                                        <td>gender</td>
+                                                        <td>con</td>
+                                                        <td>status</td>
+                                                        <td>created</td>
+                                                        <td>ip</td>
+                                                        <td>lastLogin</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>s.l</td>
+                                                        <td>name</td>
+                                                        <td class="img"><img src="images/de63a33efc4c828928755cf2eb036b38dol.jpg" /></td>
+                                                        <td>email</td>
+                                                        <td>country</td>
+                                                        <td>pass</td>
+                                                        <td>gender</td>
+                                                        <td>con</td>
+                                                        <td>status</td>
+                                                        <td>created</td>
+                                                        <td>ip</td>
+                                                        <td>lastLogin</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>s.l</td>
+                                                        <td>name</td>
+                                                        <td class="img"><img src="images/de63a33efc4c828928755cf2eb036b38dol.jpg" /></td>
+                                                        <td>email</td>
+                                                        <td>country</td>
+                                                        <td>pass</td>
+                                                        <td>gender</td>
+                                                        <td>con</td>
+                                                        <td>status</td>
+                                                        <td>created</td>
+                                                        <td>ip</td>
+                                                        <td>lastLogin</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>s.l</td>
+                                                        <td>name</td>
+                                                        <td class="img"><img src="images/de63a33efc4c828928755cf2eb036b38dol.jpg" /></td>
+                                                        <td>email</td>
+                                                        <td>country</td>
+                                                        <td>pass</td>
+                                                        <td>gender</td>
+                                                        <td>con</td>
+                                                        <td>status</td>
+                                                        <td>created</td>
+                                                        <td>ip</td>
+                                                        <td>lastLogin</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>s.l</td>
+                                                        <td>name</td>
+                                                        <td class="img"><img src="images/de63a33efc4c828928755cf2eb036b38dol.jpg" /></td>
+                                                        <td>email</td>
+                                                        <td>country</td>
+                                                        <td>pass</td>
+                                                        <td>gender</td>
+                                                        <td>con</td>
+                                                        <td>status</td>
+                                                        <td>created</td>
+                                                        <td>ip</td>
+                                                        <td>lastLogin</td>
+                                                    </tr>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -122,10 +206,17 @@ and open the template in the editor.
         <div class="container-fluid">
             <div class="row">
                 <div class="rightSideBar">
-                    <input id="userUpdate" name="userUpdate" class="userUpdate" placeholder="S.L" />
-                    <p class="active">active</p>
-                    <p class="deactive">de-active</p>
-                    <p class="delete">delete</p>
+                    <div class="cross">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <div class="childDesign">
+                        <input id="userUpdate" name="userUpdate" class="userUpdate" placeholder="S.l" />
+                        <div class="active"><p class="same"><b>active</b> &nbsp;<span style="font-size: 24px" class="fab fa-app-store-ios"></span><i></i></p></div>
+                        <div class="deactive"><p class="same"><b>deactive</b> &nbsp;<span class="fas fa-exclamation-triangle"></span><i></i></p></div>
+                        <div class="delete"><p class="same"><b>delete</b> &nbsp;<span class="fas fa-trash-alt"></span><i></i></p></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,22 +224,22 @@ and open the template in the editor.
         <script src="js/admin4All.js"></script>
         <script src="js/memberEdit.js"></script>
         <script>
-            //make large width after click on Deshboard
-            function myCross(ev) {
-                document.getElementById("myMenu").classList.toggle("sr-only");
-                document.getElementById("myMain").classList.toggle("col-sm-12");
-                document.getElementById("myMain").classList.toggle("col-md-12");
-                document.getElementById("myMain").classList.toggle("col-lg-12");
-                document.getElementById("myMain").classList.toggle("col-xl-12");
-                ev.classList.toggle("change");
-            }
-            //work on side menu bar 
-            function showMe() {
-                document.getElementsByClassName("sideMenu")[0].style.width = "100%";
-            }
-            function hideMe() {
-                document.getElementsByClassName("sideMenu")[0].style.width = "0%";
-            }
+                                    //make large width after click on Deshboard
+                                    function myCross(ev) {
+                                        document.getElementById("myMenu").classList.toggle("sr-only");
+                                        document.getElementById("myMain").classList.toggle("col-sm-12");
+                                        document.getElementById("myMain").classList.toggle("col-md-12");
+                                        document.getElementById("myMain").classList.toggle("col-lg-12");
+                                        document.getElementById("myMain").classList.toggle("col-xl-12");
+                                        ev.classList.toggle("change");
+                                    }
+                                    //work on side menu bar 
+                                    function showMe() {
+                                        document.getElementsByClassName("sideMenu")[0].style.width = "100%";
+                                    }
+                                    function hideMe() {
+                                        document.getElementsByClassName("sideMenu")[0].style.width = "0%";
+                                    }
         </script>
     </body>
 </html>
