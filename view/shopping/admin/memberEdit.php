@@ -116,9 +116,27 @@ and open the template in the editor.
                     </div>
                     <div class="childDesign">
                         <input id="userUpdate" name="userUpdate" class="userUpdate" placeholder="S.l" />
-                        <div class="active"><p class="same"><b>active</b> &nbsp;<span style="font-size: 24px" class="fab fa-app-store-ios"></span><i></i></p></div>
-                        <div class="deactive"><p class="same"><b>deactive</b> &nbsp;<span class="fas fa-exclamation-triangle"></span><i></i></p></div>
+                        <div class="active" data-toggle="modal" data-target="#edit"><p class="same"><b>edit</b> &nbsp;<span style="font-size: 20px" class="fas fa-edit"></span><i></i></p></div>
                         <div class="delete"><p class="same"><b>delete</b> &nbsp;<span class="fas fa-trash-alt"></span><i></i></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----Modal------->
+        <div id="edit" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center text-mute">edit member</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        //here work...........
+                        
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <p class="btn btn-dark pl-4 pr-4">save</p>
                     </div>
                 </div>
             </div>
