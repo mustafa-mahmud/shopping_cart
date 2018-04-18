@@ -50,28 +50,6 @@ tbody tr{
 .rightSideBarToggle{
     width: 150px;
 }
-.cross {
-    left: -50px;
-    position: absolute;
-    top: 1px;
-    cursor: pointer;
-}
-.cross div[class^=line]{
-    width: 30px;
-    height: 5px;
-    margin-bottom: 4px;
-    background: red;
-    transition: all 300ms;
-}
-.classHover{
-    margin-bottom: 6px !important;
-}
-.rotateLine1{
-    transform: rotate(-45deg) translate(-5px,5px);
-}
-.rotateLine3{
-    transform: rotate(45deg) translate(-1px,-1px);
-}
 .rightSideBar p{
     margin-bottom: 0px !important;
     padding-left: 10px;
@@ -162,4 +140,27 @@ tbody tr{
 }
 .delete span{
     color: red;
+}
+/*========Making Cross Button======*/
+.cross {
+    left: -50px;
+    position: absolute;
+    top: 1px;
+    cursor: pointer;
+}
+.cross div[class^=line]{
+    width: 30px;
+    height: 5px;
+    margin-bottom: 4px;
+    background: red;
+    transition: all 300ms;
+}
+.classHover{
+    margin-bottom: 6px !important;
+}
+.rotateLine1{
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+.rotateLine3{
+    transform: rotate(45deg) translate(-1px,-1px);
 }

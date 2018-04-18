@@ -16,24 +16,73 @@
                 data: {allData: "member"},
                 beforeSend: function () {},
                 success: function (data) {
-                    console.log(data);
+                    let Json = JSON.parse(data);
+                    if (Json.length > 0) {
+
+                        for (let i = 0; i < Json.length; i++) {
+                            $("<tr/>",{
+                                "html":$("<td/>",{
+                                    "class":"serial",
+                                    "text":(i<10)?"0"+i:i,
+                                    "data-add":i
+                                }).add($("<td/>",{
+                                    "class":"name",
+                                    "text":Json[i]["uName"]
+                                })).add($("<td/>",{
+                                    "class":"img",
+                                    "html":$("<img>",{
+                                        "src":"images/"+Json[i]["uImage"]
+                                    })
+                                })).add($("<td/>",{
+                                    "class":"email",
+                                    "text":Json[i]["uEmail"]
+                                })).add($("<td/>",{
+                                    "class":"country",
+                                    "text":Json[i]["uWorld"]
+                                })).add($("<td/>",{
+                                    "class":"pass",
+                                    "text":Json[i]["uPass"]
+                                })).add($("<td/>",{
+                                    "class":"gender",
+                                    "text":Json[i]["uGender"]
+                                })).add($("<td/>",{
+                                    "class":"confirm",
+                                    "text":Json[i]["confirm"]
+                                })).add($("<td/>",{
+                                    "class":"status",
+                                    "text":Json[i]["status"]
+                                })).add($("<td/>",{
+                                    "class":"created",
+                                    "text":Json[i]["created"]
+                                })).add($("<td/>",{
+                                    "class":"ip",
+                                    "text":Json[i]["userIp"]
+                                })).add($("<td/>",{
+                                    "class":"lastLogin",
+                                    "text":Json[i]["lastLogin"]
+                                }))
+                            }).appendTo("tbody");
+
+                        }
+                        console.log(Json);
+                    }
                 }
             });
         }
         firstValue();
 
         //cross button making
-         $(".cross").on({
-             mouseenter:function(){
-                 let visible=$(".line2:visible").length;
-                 if(visible>0){
-                     $("div[class^='line']").addClass("classHover");
-                 }
-             },
-             mouseleave:function(){
-                 $("div[class^='line']").removeClass("classHover");
-             }
-         });
+        $(".cross").on({
+            mouseenter: function () {
+                let visible = $(".line2:visible").length;
+                if (visible > 0) {
+                    $("div[class^='line']").addClass("classHover");
+                }
+            },
+            mouseleave: function () {
+                $("div[class^='line']").removeClass("classHover");
+            }
+        });
         $(".cross").on("click", function () {
             $(".rightSideBar").toggleClass("rightSideBarToggle");
             let visible = $(".line2:visible").length;
@@ -46,6 +95,11 @@
                 $(".line3").removeClass("rotateLine3");
                 $(".line2").css({"display": "block"});
             }
+        });
+        //if input filled for active/deactive/delete
+        $("#userUpdate").on("keyup",function(){
+            let inputVal=parseInt($(this).val());
+            alert(inputVal);
         });
     });
 }(jQuery));

@@ -16,7 +16,7 @@ class dbUsers {
 
         try {
             $this->userDBConn = new \PDO($dsn, $username, $passwd, $options);
-            echo "success";
+//            echo "success";
         } catch (\PDOException $ex) {
             echo $ex->getMessage();
         }

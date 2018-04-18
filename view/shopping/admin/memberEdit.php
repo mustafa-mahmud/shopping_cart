@@ -90,104 +90,7 @@ and open the template in the editor.
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td>s.l</td>
-                                                        <td>name</td>
-                                                        <td class="img"><img src="images/de63a33efc4c828928755cf2eb036b38dol.jpg" /></td>
-                                                        <td>email</td>
-                                                        <td>country</td>
-                                                        <td>pass</td>
-                                                        <td>gender</td>
-                                                        <td>con</td>
-                                                        <td>status</td>
-                                                        <td>created</td>
-                                                        <td>ip</td>
-                                                        <td>lastLogin</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>s.l</td>
-                                                        <td>name</td>
-                                                        <td class="img"><img src="images/de63a33efc4c828928755cf2eb036b38dol.jpg" /></td>
-                                                        <td>email</td>
-                                                        <td>country</td>
-                                                        <td>pass</td>
-                                                        <td>gender</td>
-                                                        <td>con</td>
-                                                        <td>status</td>
-                                                        <td>created</td>
-                                                        <td>ip</td>
-                                                        <td>lastLogin</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>s.l</td>
-                                                        <td>name</td>
-                                                        <td class="img"><img src="images/de63a33efc4c828928755cf2eb036b38dol.jpg" /></td>
-                                                        <td>email</td>
-                                                        <td>country</td>
-                                                        <td>pass</td>
-                                                        <td>gender</td>
-                                                        <td>con</td>
-                                                        <td>status</td>
-                                                        <td>created</td>
-                                                        <td>ip</td>
-                                                        <td>lastLogin</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>s.l</td>
-                                                        <td>name</td>
-                                                        <td class="img"><img src="images/de63a33efc4c828928755cf2eb036b38dol.jpg" /></td>
-                                                        <td>email</td>
-                                                        <td>country</td>
-                                                        <td>pass</td>
-                                                        <td>gender</td>
-                                                        <td>con</td>
-                                                        <td>status</td>
-                                                        <td>created</td>
-                                                        <td>ip</td>
-                                                        <td>lastLogin</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>s.l</td>
-                                                        <td>name</td>
-                                                        <td class="img"><img src="images/de63a33efc4c828928755cf2eb036b38dol.jpg" /></td>
-                                                        <td>email</td>
-                                                        <td>country</td>
-                                                        <td>pass</td>
-                                                        <td>gender</td>
-                                                        <td>con</td>
-                                                        <td>status</td>
-                                                        <td>created</td>
-                                                        <td>ip</td>
-                                                        <td>lastLogin</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>s.l</td>
-                                                        <td>name</td>
-                                                        <td class="img"><img src="images/de63a33efc4c828928755cf2eb036b38dol.jpg" /></td>
-                                                        <td>email</td>
-                                                        <td>country</td>
-                                                        <td>pass</td>
-                                                        <td>gender</td>
-                                                        <td>con</td>
-                                                        <td>status</td>
-                                                        <td>created</td>
-                                                        <td>ip</td>
-                                                        <td>lastLogin</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>s.l</td>
-                                                        <td>name</td>
-                                                        <td class="img"><img src="images/de63a33efc4c828928755cf2eb036b38dol.jpg" /></td>
-                                                        <td>email</td>
-                                                        <td>country</td>
-                                                        <td>pass</td>
-                                                        <td>gender</td>
-                                                        <td>con</td>
-                                                        <td>status</td>
-                                                        <td>created</td>
-                                                        <td>ip</td>
-                                                        <td>lastLogin</td>
-                                                    </tr>
+                                                    <!-----Here all data came by MemberEdit.js----->
                                                 </tbody>
                                             </table>
                                         </div>
@@ -224,22 +127,22 @@ and open the template in the editor.
         <script src="js/admin4All.js"></script>
         <script src="js/memberEdit.js"></script>
         <script>
-                                    //make large width after click on Deshboard
-                                    function myCross(ev) {
-                                        document.getElementById("myMenu").classList.toggle("sr-only");
-                                        document.getElementById("myMain").classList.toggle("col-sm-12");
-                                        document.getElementById("myMain").classList.toggle("col-md-12");
-                                        document.getElementById("myMain").classList.toggle("col-lg-12");
-                                        document.getElementById("myMain").classList.toggle("col-xl-12");
-                                        ev.classList.toggle("change");
-                                    }
-                                    //work on side menu bar 
-                                    function showMe() {
-                                        document.getElementsByClassName("sideMenu")[0].style.width = "100%";
-                                    }
-                                    function hideMe() {
-                                        document.getElementsByClassName("sideMenu")[0].style.width = "0%";
-                                    }
+                //make large width after click on Deshboard
+                function myCross(ev) {
+                    document.getElementById("myMenu").classList.toggle("sr-only");
+                    document.getElementById("myMain").classList.toggle("col-sm-12");
+                    document.getElementById("myMain").classList.toggle("col-md-12");
+                    document.getElementById("myMain").classList.toggle("col-lg-12");
+                    document.getElementById("myMain").classList.toggle("col-xl-12");
+                    ev.classList.toggle("change");
+                }
+                //work on side menu bar 
+                function showMe() {
+                    document.getElementsByClassName("sideMenu")[0].style.width = "100%";
+                }
+                function hideMe() {
+                    document.getElementsByClassName("sideMenu")[0].style.width = "0%";
+                }
         </script>
     </body>
 </html>
