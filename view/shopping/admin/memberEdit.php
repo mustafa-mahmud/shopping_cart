@@ -19,11 +19,12 @@ and open the template in the editor.
         <link href='/PATH/TO/FOLDER/css/animations-ie-fix.css' rel='stylesheet'>
         <![endif]-->
         <!-----CSS----->
-        <link rel="stylesheet" href="css/admin4All.css" />
-        <link rel="stylesheet" href="css/practise.css" />
-        <link rel="stylesheet" href="css/bootstrap.css" />
-        <link rel="stylesheet" href="css/scrollbar.css" />
         <link rel="stylesheet" href="css/memberEdit.css" />
+        <link rel="stylesheet" href="css/admin4All.css" />
+        <link rel="stylesheet" href="css/scrollbar.css" />
+        <link rel="stylesheet" href="css/userForm.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/practise.css" />
 
         <!----Fonts---->
         <script src="js/jquery-3.2.1.min.js"></script>
@@ -116,27 +117,100 @@ and open the template in the editor.
                     </div>
                     <div class="childDesign">
                         <input id="userUpdate" name="userUpdate" class="userUpdate" placeholder="S.l" />
-                        <div class="active" data-toggle="modal" data-target="#edit"><p class="same"><b>edit</b> &nbsp;<span style="font-size: 20px" class="fas fa-edit"></span><i></i></p></div>
+                        <div class="active" data-toggle="modal" data-target="#userForm"><p class="same"><b>edit</b> &nbsp;<span style="font-size: 20px" class="fas fa-edit"></span><i></i></p></div>
                         <div class="delete"><p class="same"><b>delete</b> &nbsp;<span class="fas fa-trash-alt"></span><i></i></p></div>
                     </div>
                 </div>
             </div>
         </div>
         <!-----Modal------->
-        <div id="edit" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-center text-mute">edit member</h5>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        //here work...........
-                        
-                        
-                    </div>
-                    <div class="modal-footer">
-                        <p class="btn btn-dark pl-4 pr-4">save</p>
+        <div class="container-fluid">
+            <div class="row">
+                <p data-toggle="modal" data-target="#userForm" class="btn btn-dark m-2">form</p>
+                <!---Modal---->
+                <div id="userForm" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <button class="close myDesign" type="button" data-dismiss="modal">&times;</button>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="userForm col-sm-12">
+                                        <div class="card">
+                                            <div class="card-header p-3 bg-dark">
+                                                Edit Member
+                                            </div>
+                                            <div class="card-body">
+                                                <form>
+                                                    <div class="input-group mb-3 at">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">Name</span>
+                                                        </div>
+                                                        <input id="name" type="text" class="form-control name" name="name">
+                                                        <div class="input-group-append">
+                                                            <button type="button" class="btn setPrev input-group-text btn-dark">Reset</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">Image</span>
+                                                        </div>
+                                                        <input type="file" class="form-control imgUser">
+                                                        <div class="input-group-append">
+                                                            <img id="userImg" src="images/doll.jpg" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">Email</span>
+                                                        </div>
+                                                        <input id="email" type="text" class="form-control email" name="email">
+                                                        <div class="input-group-append">
+                                                            <button type="button" class="btn setPrev input-group-text btn-dark">Reset</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">Country</span>
+                                                        </div>
+                                                        <select name="country" class="form-control">
+                                                            <option value="null">select country</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-group myOne">
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">
+                                                                <span>gender</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">
+                                                                <span>male</span>&nbsp;
+                                                                <input name="gender" type="radio">
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">
+                                                                <span>female</span>&nbsp;
+                                                                <input name="gender" type="radio">
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-group-prepend">
+                                                            <div class="input-group-text">
+                                                                <span>others</span>&nbsp;
+                                                                <input name="gender" type="radio">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="card-footer">
+                                                <p class="btn btn-success pr-4 pl-4 float-right">save</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -144,23 +218,24 @@ and open the template in the editor.
         <script src="js/bootstrap.js"></script>
         <script src="js/admin4All.js"></script>
         <script src="js/memberEdit.js"></script>
+        <script src="js/userForm.js"></script>
         <script>
-                //make large width after click on Deshboard
-                function myCross(ev) {
-                    document.getElementById("myMenu").classList.toggle("sr-only");
-                    document.getElementById("myMain").classList.toggle("col-sm-12");
-                    document.getElementById("myMain").classList.toggle("col-md-12");
-                    document.getElementById("myMain").classList.toggle("col-lg-12");
-                    document.getElementById("myMain").classList.toggle("col-xl-12");
-                    ev.classList.toggle("change");
-                }
-                //work on side menu bar 
-                function showMe() {
-                    document.getElementsByClassName("sideMenu")[0].style.width = "100%";
-                }
-                function hideMe() {
-                    document.getElementsByClassName("sideMenu")[0].style.width = "0%";
-                }
+                                    //make large width after click on Deshboard
+                                    function myCross(ev) {
+                                        document.getElementById("myMenu").classList.toggle("sr-only");
+                                        document.getElementById("myMain").classList.toggle("col-sm-12");
+                                        document.getElementById("myMain").classList.toggle("col-md-12");
+                                        document.getElementById("myMain").classList.toggle("col-lg-12");
+                                        document.getElementById("myMain").classList.toggle("col-xl-12");
+                                        ev.classList.toggle("change");
+                                    }
+                                    //work on side menu bar 
+                                    function showMe() {
+                                        document.getElementsByClassName("sideMenu")[0].style.width = "100%";
+                                    }
+                                    function hideMe() {
+                                        document.getElementsByClassName("sideMenu")[0].style.width = "0%";
+                                    }
         </script>
     </body>
 </html>

@@ -1,0 +1,44 @@
+.myDesign {
+    position: absolute;
+    right: -20px;
+    top: -15px;
+    outline: none !important;
+}
+.userForm{
+}
+.setPrev{
+    cursor: pointer;
+}
+#userForm .modal-content{
+    background:  #154360  !important;
+    border-radius: 0 !important;
+}
+#userForm .modal-body{
+    padding: 0 !important;
+}
+#userForm .form-control{
+    border-radius: 0 !important;
+    -webkit-appearance: none;
+}
+#userForm .input-group-text{
+    border-radius: 0 !important;
+}
+#userForm img{
+    width: 79px !important;
+    height: 49px !important;
+}
+.myOne .input-group-prepend{
+    width: 25% !important;
+}
+.myOne .input-group-prepend .input-group-text{
+    width: 100% !important;
+}
+
+.userForm .card{
+    border: none !important;
+    border-radius: 0 !important;
+}
+.userForm .card-header{
+    border-radius: 0 !important;
+    color: white !important;
+}
