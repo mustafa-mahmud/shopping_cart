@@ -116,9 +116,21 @@ and open the template in the editor.
                         <div class="line3"></div>
                     </div>
                     <div class="childDesign">
-                        <input id="userUpdate" name="userUpdate" class="userUpdate" placeholder="S.l" />
-                        <div class="active" data-toggle="modal" data-target="#userForm"><p class="same"><b>edit</b> &nbsp;<span style="font-size: 20px" class="fas fa-edit"></span><i></i></p></div>
-                        <div class="delete"><p class="same"><b>delete</b> &nbsp;<span class="fas fa-trash-alt"></span><i></i></p></div>
+                        <input data-toggle="tooltip" data-trigger="focus" data-placement="left" title="please input any serial number" id="userUpdate" name="userUpdate" class="userUpdate" placeholder="S.l" />
+                        <div class="active" data-toggle="modal" data-target="##userForm">
+                            <p class="same">
+                                <b>edit</b> &nbsp;
+                                <span style="font-size: 20px" class="fas fa-edit"></span>
+                                <i></i>
+                            </p>
+                        </div>
+                        <div class="delete">
+                            <p class="same">
+                                <b>delete</b> &nbsp;
+                                <span class="fas fa-trash-alt"></span>
+                                <i></i>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,6 +153,7 @@ and open the template in the editor.
                                             </div>
                                             <div class="card-body">
                                                 <form>
+                                                    <!----Name----->
                                                     <div class="input-group mb-3 at">
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text">Name</span>
@@ -150,6 +163,7 @@ and open the template in the editor.
                                                             <button type="button" class="btn setPrev input-group-text btn-dark">Reset</button>
                                                         </div>
                                                     </div>
+                                                    <!----Image----->
                                                     <div class="input-group mb-3">
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text">Image</span>
@@ -159,6 +173,7 @@ and open the template in the editor.
                                                             <img id="userImg" src="images/doll.jpg" />
                                                         </div>
                                                     </div>
+                                                    <!----Email----->
                                                     <div class="input-group mb-3">
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text">Email</span>
@@ -168,6 +183,7 @@ and open the template in the editor.
                                                             <button type="button" class="btn setPrev input-group-text btn-dark">Reset</button>
                                                         </div>
                                                     </div>
+                                                    <!----Country----->
                                                     <div class="input-group mb-3">
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text">Country</span>
@@ -176,7 +192,8 @@ and open the template in the editor.
                                                             <option value="null">select country</option>
                                                         </select>
                                                     </div>
-                                                    <div class="input-group myOne">
+                                                    <!----Gender----->
+                                                    <div class="input-group myOne mb-3">
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
                                                                 <span>gender</span>
@@ -201,10 +218,51 @@ and open the template in the editor.
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <!----Password----->
+                                                    <div class="input-group mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">New Pass</span>
+                                                        </div>
+                                                        <input type="password" name="newPass" class="form-control" placeholder="new password" />
+                                                        <input type="password" name="oldPass" class="form-control" placeholder="confirm password" />
+                                                    </div>
+                                                    <!----Email Confirmation----->
+                                                    <div class="input-group mb-3 myOne2">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">Email Confirmation</span>
+                                                        </div>
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">Yes &nbsp;
+                                                                <input type="radio" name="emailConfirmation" />
+                                                            </span>
+                                                        </div>
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">No &nbsp;
+                                                                <input type="radio" name="emailConfirmation" />
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <!----Status----->
+                                                    <div class="input-group myOne2 mb-3">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">Status</span>
+                                                        </div>
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">Active &nbsp;
+                                                                <input type="radio" name="status" />
+                                                            </span>
+                                                        </div>
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text">Inactive &nbsp;
+                                                                <input type="radio" name="status" />
+                                                            </span>
+                                                        </div>
+                                                    </div>
                                                 </form>
                                             </div>
                                             <div class="card-footer">
-                                                <p class="btn btn-success pr-4 pl-4 float-right">save</p>
+                                                <button class="btn btn-success pr-4 pl-4 float-right save">save</button>
+                                                <button class="btn btn-dark pr-4 pl-4 float-right reset mr-3">reset</button>
                                             </div>
                                         </div>
                                     </div>
@@ -216,6 +274,7 @@ and open the template in the editor.
             </div>
         </div>
         <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
         <script src="js/admin4All.js"></script>
         <script src="js/memberEdit.js"></script>
         <script src="js/userForm.js"></script>

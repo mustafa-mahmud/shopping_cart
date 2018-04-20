@@ -1,47 +1,35 @@
 (function ($) {
     $(function () {
         $("button").on({
-            click:function(event){
+            click: function (event) {
                 event.preventDefault();
             }
         });
-        //name email data get from some.txt
-        $.post("some.txt", function (data, status) {
-            if (status === "success") {
-                //remove line break
-                let removeN = data.replace(/\r\n|\n\r/gm, " ");
-                //make array by sapce
-                let arrRemoveN = removeN.split(" ");
-                let arr = [];
-                let arrObj = [];
-                //make array by colone
-                for (let index in arrRemoveN) {
-                    arr.push(arrRemoveN[index].split(":"));
+        //get user DB data for user form...........
+        function getDataUser() {
+
+        }
+        $("#userUpdate").on({
+            "keyup": function () {
+                console.log("keyup");
+                let val = parseInt($(this).val());
+                if (isNaN(val) === true) {
+                    $("#userUpdate").tooltip("show");
+                    $("#userUpdate").focus();
+                } else {
+                    $("#userUpdate").tooltip("hide");
                 }
-                //make object
-                for (let x = 0; x < arr.length; x++) {
-                    let index2 = arr[x][0].trim();
-                    let value2 = arr[x][1].trim();
-                    if (x === 0) {
-                        arrObj.push("{" + "\"" + index2 + "\"" + ":" + "\"" + value2 + "\"");
-                    } else if ((arr.length - 1) === x) {
-                        arrObj.push("\"" + index2 + "\"" + ":" + "\"" + value2 + "\"" + "}");
-                    } else {
-                        arrObj.push("\"" + index2 + "\"" + ":" + "\"" + value2 + "\"");
-                    }
-                }
-                let join = arrObj.join();
-                let parse = JSON.parse(join);
-                $("input[name='name']").attr("placeholder", parse["name"]);
-                $("input[name='name']").attr("data-value", parse["name"]);
-                $("input[name='email']").attr("placeholder", parse["email"]);
-                $("input[name='email']").attr("data-value", parse["email"]);
-                //reset individual value
-                $(".setPrev").on("click", function () {
-                    let input = $(this).parent().prev();
-                    let data_value=$(input).attr("data-value");
-                    $(input).val(data_value);
-                });
+            }
+        });
+        $(".active").on("click", function () {
+            console.log("click");
+            let val = parseInt($("#userUpdate").val());
+            if (val > 0 && isNaN(val) === false) {//number and not blank
+                $("#userUpdate").tooltip("hide");
+                //work start here.............
+            } else {
+                $("#userUpdate").tooltip("show");
+                $("#userUpdate").focus();
             }
         });
         //image show when choosen..........
@@ -55,7 +43,7 @@
                 $("#userImg").attr("src", reader.result);
             };
         });
-        //process country.txt for select tag.......
+        //process country.txt for select tag.........
         $.post("country.txt", function (data, status) {
             if (status === "success") {
                 var arrPush = [];

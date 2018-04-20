@@ -33,7 +33,15 @@
 .myOne .input-group-prepend .input-group-text{
     width: 100% !important;
 }
-
+.myOne2 .input-group-prepend:first-child{
+    width: 50% !important;
+}
+.myOne2 .input-group-prepend{
+    width: 25% !important;
+}
+.myOne2 .input-group-prepend .input-group-text{
+    width: 100% !important;
+}
 .userForm .card{
     border: none !important;
     border-radius: 0 !important;
