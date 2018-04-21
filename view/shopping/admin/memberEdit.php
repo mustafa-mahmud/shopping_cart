@@ -117,7 +117,7 @@ and open the template in the editor.
                     </div>
                     <div class="childDesign">
                         <input data-toggle="tooltip" data-trigger="focus" data-placement="left" title="please input any serial number" id="userUpdate" name="userUpdate" class="userUpdate" placeholder="S.l" />
-                        <div class="active" data-toggle="modal" data-target="#userForm">
+                        <div class="active">
                             <p class="same">
                                 <b>edit</b> &nbsp;
                                 <span style="font-size: 20px" class="fas fa-edit"></span>
@@ -151,7 +151,7 @@ and open the template in the editor.
                                                 Edit Member
                                             </div>
                                             <div class="card-body">
-                                                <form>
+                                                <form id="userEdit">
                                                     <!----Name----->
                                                     <div class="input-group mb-3 at">
                                                         <div class="input-group-prepend">
@@ -167,7 +167,7 @@ and open the template in the editor.
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text">Image</span>
                                                         </div>
-                                                        <input type="file" class="form-control imgUser">
+                                                        <input type="file" id="userFile" class="form-control imgUser">
                                                         <div class="input-group-append">
                                                             <img id="userImg" src="images/doll.jpg" />
                                                         </div>
@@ -277,6 +277,7 @@ and open the template in the editor.
         <script src="js/admin4All.js"></script>
         <script src="js/memberEdit.js"></script>
         <script src="js/userForm.js"></script>
+        <script src="js/memberEditVerification.js"></script>
         <script>
                                     //make large width after click on Deshboard
                                     function myCross(ev) {

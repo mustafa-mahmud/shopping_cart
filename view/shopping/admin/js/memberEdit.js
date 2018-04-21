@@ -111,7 +111,6 @@
                     var processScroll = (scrollOff > 0) ? scrollOff : 0;
                     $("#myMain").animate({scrollTop: processScroll});
                     $(this).parent().addClass("borderMake");
-
                 }
             });
         });
