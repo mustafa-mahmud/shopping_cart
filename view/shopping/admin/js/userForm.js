@@ -6,12 +6,50 @@
             }
         });
         //get user DB data for user form...........
-        function getDataUser() {
-
+        function getDataUser(serial) {
+            $.ajax({
+                url:"memberObject.php",
+                type:"POST",
+                cache: false,
+                async: false,
+                data:{"id":serial},
+                beforeSend:function(){},
+                success:function(data){// |OK
+                    var json=JSON.parse(data);
+                    //user form value input
+                    $("#name").val(json[0]["uName"]);
+                    $("#userImg").attr("src","images/"+json[0]["uImage"]);
+                    $("#email").val(json[0]["uEmail"]);
+                    $("#country").find("option").each(function(){//show user country
+                        let optionValue=$(this).attr("value");
+                        if(optionValue===json[0]["uWorld"]){
+                            $(this).attr("selected","selected");
+                        }
+                    });
+                    $("input[name='gender']").each(function(){//show user gender
+                        let genValue=$(this).attr("data-gen");
+                        if(genValue===json[0]["uGender"]){
+                            $(this).prop("checked",true);
+                        }
+                    });
+                    $("input[name='emailConfirmation']").each(function(){//show email confirmation
+                        let confirm=parseInt($(this).attr("data-confirm"));
+                        if(confirm==json[0]["confirm"]){
+                            $(this).prop("checked",true);
+                        }
+                    });
+                    $("input[name='status']").each(function(){//show user status
+                        let status=parseInt($(this).attr("data-status"));
+                        if(status==json[0]["status"]){
+                            $(this).prop("checked",true);
+                        }
+                    });
+                    
+                }
+            });
         }
         $("#userUpdate").on({
             "keyup": function () {
-                console.log("keyup");
                 let val = parseInt($(this).val());
                 if (isNaN(val) === true) {
                     $("#userUpdate").tooltip("show");
@@ -22,11 +60,33 @@
             }
         });
         $(".active").on("click", function () {
-            console.log("click");
+            $("input[name='newPass']").val("");
+            $("input[name='email']").val("");
+            var arr = [];
             let val = parseInt($("#userUpdate").val());
-            if (val > 0 && isNaN(val) === false) {//number and not blank
+            if (val!=="" && isNaN(val) === false) {//number and not blank
                 $("#userUpdate").tooltip("hide");
-                //work start here.............
+                $("tbody").find("tr").each(function () {
+                    $(this).find("td").eq(0).each(function () {
+                        let tdData = parseInt($(this).attr("data-add"));
+                        arr.push(tdData);
+                    });
+                });
+                if (arr.includes(val)) {//search is user input number available in serials
+                    $("#userUpdate").tooltip("hide");
+                    $("tbody").find("tr").each(function () {
+                        $(this).find("td").each(function () {
+                            let data_add = parseInt($(this).attr("data-add"));
+                            if (val === data_add) {
+                                let id=parseInt($(this).attr("user-id"));
+                                getDataUser(id);
+                            }
+                        });
+                    });
+                } else {
+                    $("#userUpdate").tooltip("show");
+                    $("#userUpdate").focus();
+                }
             } else {
                 $("#userUpdate").tooltip("show");
                 $("#userUpdate").focus();

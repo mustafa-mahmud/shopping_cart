@@ -24,6 +24,7 @@
                                 "html": $("<td/>", {
                                     "class": "serial",
                                     "text": (i < 10) ? "0" + i : i,
+                                    "user-id":Json[i]["singUpId"],
                                     "data-add": i
                                 }).add($("<td/>", {
                                     "class": "name",
@@ -64,7 +65,6 @@
                             }).appendTo("tbody");
 
                         }
-                        console.log(Json);
                     }
                 }
             });

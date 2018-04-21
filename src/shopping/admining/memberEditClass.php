@@ -20,4 +20,14 @@ class memberEditClass {
         }
     }
     
+    public function specificInfo($data=""){
+        if($data>0){
+            $sql="SELECT * FROM `signup` WHERE `singUpId`=$data";
+            $query= $this->conn->prepare($sql);
+            $query->execute();
+            $show=$query->fetchAll(\PDO::FETCH_ASSOC);
+            return $show;
+        }
+    }
+    
 }

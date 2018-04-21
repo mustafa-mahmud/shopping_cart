@@ -117,7 +117,7 @@ and open the template in the editor.
                     </div>
                     <div class="childDesign">
                         <input data-toggle="tooltip" data-trigger="focus" data-placement="left" title="please input any serial number" id="userUpdate" name="userUpdate" class="userUpdate" placeholder="S.l" />
-                        <div class="active" data-toggle="modal" data-target="##userForm">
+                        <div class="active" data-toggle="modal" data-target="#userForm">
                             <p class="same">
                                 <b>edit</b> &nbsp;
                                 <span style="font-size: 20px" class="fas fa-edit"></span>
@@ -138,7 +138,6 @@ and open the template in the editor.
         <!-----Modal------->
         <div class="container-fluid">
             <div class="row">
-                <p data-toggle="modal" data-target="#userForm" class="btn btn-dark m-2">form</p>
                 <!---Modal---->
                 <div id="userForm" class="modal fade" role="dialog">
                     <div class="modal-dialog">
@@ -188,7 +187,7 @@ and open the template in the editor.
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text">Country</span>
                                                         </div>
-                                                        <select name="country" class="form-control">
+                                                        <select name="country" id="country" class="form-control">
                                                             <option value="null">select country</option>
                                                         </select>
                                                     </div>
@@ -202,19 +201,19 @@ and open the template in the editor.
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
                                                                 <span>male</span>&nbsp;
-                                                                <input name="gender" type="radio">
+                                                                <input name="gender" data-gen="men" type="radio">
                                                             </div>
                                                         </div>
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
                                                                 <span>female</span>&nbsp;
-                                                                <input name="gender" type="radio">
+                                                                <input name="gender" data-gen="women" type="radio">
                                                             </div>
                                                         </div>
                                                         <div class="input-group-prepend">
                                                             <div class="input-group-text">
                                                                 <span>others</span>&nbsp;
-                                                                <input name="gender" type="radio">
+                                                                <input name="gender" data-gen="others" type="radio">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -233,12 +232,12 @@ and open the template in the editor.
                                                         </div>
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text">Yes &nbsp;
-                                                                <input type="radio" name="emailConfirmation" />
+                                                                <input type="radio" data-confirm="1" name="emailConfirmation" />
                                                             </span>
                                                         </div>
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text">No &nbsp;
-                                                                <input type="radio" name="emailConfirmation" />
+                                                                <input type="radio" data-confirm="0" name="emailConfirmation" />
                                                             </span>
                                                         </div>
                                                     </div>
@@ -249,12 +248,12 @@ and open the template in the editor.
                                                         </div>
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text">Active &nbsp;
-                                                                <input type="radio" name="status" />
+                                                                <input type="radio" data-status="1" name="status" />
                                                             </span>
                                                         </div>
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text">Inactive &nbsp;
-                                                                <input type="radio" name="status" />
+                                                                <input type="radio" data-status="0" name="status" />
                                                             </span>
                                                         </div>
                                                     </div>
