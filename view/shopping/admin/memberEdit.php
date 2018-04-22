@@ -260,6 +260,7 @@ and open the template in the editor.
                                                 </form>
                                             </div>
                                             <div class="card-footer">
+                                                <p class="errAllShow pb-3"></p>
                                                 <button class="btn btn-success pr-4 pl-4 float-right save">save</button>
                                                 <button class="btn btn-dark pr-4 pl-4 float-right reset mr-3">reset</button>
                                             </div>

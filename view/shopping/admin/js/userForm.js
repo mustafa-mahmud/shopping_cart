@@ -108,6 +108,7 @@
             if (status === "success") {
                 var arrPush = [];
                 var removeComma = data.replace(/["]/gm, "");
+
                 var removeN = removeComma.replace(/\r\n|\n\r/gm, "");
                 var arrMake = removeN.split(",");
                 for (let i = 0; i < arrMake.length; i++) {
@@ -140,6 +141,8 @@
             click: function () {
                 $("select").val(json[0]["uWorld"]);
                 $("input[type='file']").val("");
+                $("input").css({"border-color": "#ced4da"});
+                $(".errAllShow").fadeOut("slow").text("");
                 formInput();
             }
         });

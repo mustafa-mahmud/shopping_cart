@@ -50,3 +50,7 @@
     border-radius: 0 !important;
     color: white !important;
 }
+.errAllShow{
+    color: red;
+    display: none;
+}
