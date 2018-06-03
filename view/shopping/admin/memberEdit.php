@@ -124,7 +124,7 @@ and open the template in the editor.
                                 <i></i>
                             </p>
                         </div>
-                        <div class="delete">
+                        <div class="delete" data-toggle="confirmation" data-title="Are you sre to Delete?" data-placement="left">
                             <p class="same">
                                 <b>delete</b> &nbsp;
                                 <span class="fas fa-trash-alt"></span>
@@ -152,8 +152,10 @@ and open the template in the editor.
                                             </div>
                                             <div class="card-body">
                                                 <form id="userEdit">
+                                                    <!----Hidden Id------>
+                                                    <input type="hidden" name="uId" id="uId" />
                                                     <!----Name----->
-                                                    <div class="input-group mb-3 at">
+                                                    <div class="input-group mb-3">
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text">Name</span>
                                                         </div>
@@ -167,7 +169,7 @@ and open the template in the editor.
                                                         <div class="input-group-prepend">
                                                             <span class="input-group-text">Image</span>
                                                         </div>
-                                                        <input type="file" id="userFile" class="form-control imgUser">
+                                                        <input type="file" name="img" id="userFile" class="form-control imgUser">
                                                         <div class="input-group-append">
                                                             <img id="userImg" src="images/doll.jpg" />
                                                         </div>
@@ -231,14 +233,16 @@ and open the template in the editor.
                                                             <span class="input-group-text">Email Confirmation</span>
                                                         </div>
                                                         <div class="input-group-prepend">
-                                                            <span class="input-group-text">Yes &nbsp;
+                                                            <div class="input-group-text">
+                                                                <span>Yes</span>&nbsp;
                                                                 <input type="radio" data-confirm="1" name="emailConfirmation" />
-                                                            </span>
+                                                            </div>
                                                         </div>
                                                         <div class="input-group-prepend">
-                                                            <span class="input-group-text">No &nbsp;
+                                                            <div class="input-group-text">
+                                                                <span>No</span>&nbsp;
                                                                 <input type="radio" data-confirm="0" name="emailConfirmation" />
-                                                            </span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <!----Status----->
@@ -247,20 +251,22 @@ and open the template in the editor.
                                                             <span class="input-group-text">Status</span>
                                                         </div>
                                                         <div class="input-group-prepend">
-                                                            <span class="input-group-text">Active &nbsp;
+                                                            <div class="input-group-text">
+                                                                <span>Active</span> &nbsp;
                                                                 <input type="radio" data-status="1" name="status" />
-                                                            </span>
+                                                            </div>
                                                         </div>
                                                         <div class="input-group-prepend">
-                                                            <span class="input-group-text">Inactive &nbsp;
+                                                            <div class="input-group-text">
+                                                                <span>Inactive</span> &nbsp;
                                                                 <input type="radio" data-status="0" name="status" />
-                                                            </span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </form>
                                             </div>
                                             <div class="card-footer">
-                                                <p class="errAllShow pb-3"></p>
+                                                <p class="errAllShow pb-3">This is the dummy messages!</p>
                                                 <button class="btn btn-success pr-4 pl-4 float-right save">save</button>
                                                 <button class="btn btn-dark pr-4 pl-4 float-right reset mr-3">reset</button>
                                             </div>
@@ -279,23 +285,27 @@ and open the template in the editor.
         <script src="js/memberEdit.js"></script>
         <script src="js/userForm.js"></script>
         <script src="js/memberEditVerification.js"></script>
+        <script src="js/bootstrap-confirmation.js"></script>
         <script>
-                                    //make large width after click on Deshboard
-                                    function myCross(ev) {
-                                        document.getElementById("myMenu").classList.toggle("sr-only");
-                                        document.getElementById("myMain").classList.toggle("col-sm-12");
-                                        document.getElementById("myMain").classList.toggle("col-md-12");
-                                        document.getElementById("myMain").classList.toggle("col-lg-12");
-                                        document.getElementById("myMain").classList.toggle("col-xl-12");
-                                        ev.classList.toggle("change");
-                                    }
-                                    //work on side menu bar 
-                                    function showMe() {
-                                        document.getElementsByClassName("sideMenu")[0].style.width = "100%";
-                                    }
-                                    function hideMe() {
-                                        document.getElementsByClassName("sideMenu")[0].style.width = "0%";
-                                    }
+            //make large width after click on Deshboard
+            function myCross(ev) {
+                document.getElementById("myMenu").classList.toggle("sr-only");
+                document.getElementById("myMain").classList.toggle("col-sm-12");
+                document.getElementById("myMain").classList.toggle("col-md-12");
+                document.getElementById("myMain").classList.toggle("col-lg-12");
+                document.getElementById("myMain").classList.toggle("col-xl-12");
+                ev.classList.toggle("change");
+            }
+            //work on side menu bar 
+            function showMe() {
+                document.getElementsByClassName("sideMenu")[0].style.width = "100%";
+            }
+            function hideMe() {
+                document.getElementsByClassName("sideMenu")[0].style.width = "0%";
+            }
+        </script>
+        <script>
+           
         </script>
     </body>
 </html>

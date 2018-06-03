@@ -801,7 +801,7 @@ iframe{
 }
 /*product add + del popup*/
 .samePerma {
-    margin-right: 30px;
+    /*margin-right: 30px;*/
     box-shadow: 2px 4px 3px 2px black !important;
     outline: none !important;
 }

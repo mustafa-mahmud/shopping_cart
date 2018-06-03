@@ -24,7 +24,7 @@
                                 "html": $("<td/>", {
                                     "class": "serial",
                                     "text": (i < 10) ? "0" + i : i,
-                                    "user-id":Json[i]["singUpId"],
+                                    "user-id": window.userId = Json[i]["singUpId"],
                                     "data-add": i
                                 }).add($("<td/>", {
                                     "class": "name",
@@ -84,6 +84,16 @@
             }
         });
         $(".cross").on("click", function () {
+            //remove red border color if it exists
+            let allClass=document.getElementsByTagName("tr");
+            let len=allClass.length;
+            let i;
+            for(i=0;i<len;i++){
+                if(allClass[i].classList.contains("borderMake")){
+                    allClass[i].classList.remove("borderMake");
+                }
+            }
+            
             $(".rightSideBar").toggleClass("rightSideBarToggle");
             let visible = $(".line2:visible").length;
             if (visible > 0) {

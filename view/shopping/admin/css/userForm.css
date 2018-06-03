@@ -52,5 +52,6 @@
 }
 .errAllShow{
     color: red;
-    display: none;
+    display: block;
+    visibility: hidden;
 }

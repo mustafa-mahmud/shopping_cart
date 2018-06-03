@@ -9,6 +9,7 @@
         //all data distributed into 'form input'
         function formInput() {
             //user form value input
+            $("#uId").val((json[0]["singUpId"]));
             $("#name").val(json[0]["uName"]);
             $("#userImg").attr("src", "images/" + json[0]["uImage"]);
             $("#email").val(json[0]["uEmail"]);
@@ -50,6 +51,7 @@
         }
         $("#userUpdate").on({
             "keyup": function () {
+                $("[data-toggle=confirmation]").confirmation("dispose");
                 let val = parseInt($(this).val());
                 if (isNaN(val) === true) {
                     $("#userUpdate").tooltip("show");
@@ -59,38 +61,83 @@
                 }
             }
         });
-        $(".active").on("click", function () {
-            $("input[name='newPass']").val("");
-            $("input[name='email']").val("");
-            var arr = [];
-            let val = parseInt($("#userUpdate").val());
-            if (val !== "" && isNaN(val) === false) {//number and not blank
-                $("#userUpdate").tooltip("hide");
-                $("tbody").find("tr").each(function () {
-                    $(this).find("td").eq(0).each(function () {
-                        let tdData = parseInt($(this).attr("data-add"));
-                        arr.push(tdData);
-                    });
-                });
-                if (arr.includes(val)) {//search is user input number available in serials
+        window.showToolTip = {
+            myToolTip: function (elem) {
+                var arr = [];
+                let val = parseInt($("#userUpdate").val());
+                if (val !== "" && isNaN(val) === false) {//number and not blank
                     $("#userUpdate").tooltip("hide");
                     $("tbody").find("tr").each(function () {
-                        $(this).find("td").each(function () {
-                            let data_add = parseInt($(this).attr("data-add"));
-                            if (val === data_add) {
-                                let id = parseInt($(this).attr("user-id"));
-                                getDataUser(id);
-                            }
+                        $(this).find("td").eq(0).each(function () {
+                            let tdData = parseInt($(this).attr("data-add"));
+                            arr.push(tdData);
                         });
                     });
+                    if (arr.includes(val)) {//search is user input number available in serials
+                        $("#userUpdate").tooltip("hide");
+                        $("tbody").find("tr").each(function () {
+                            $(this).find("td").each(function () {
+                                let data_add = parseInt($(this).attr("data-add"));
+                                if (val === data_add) {
+                                    let id = parseInt($(this).attr("user-id"));
+                                    if (elem.classList.contains("active")) {//this will work when click on 'edit'
+                                        getDataUser(id);
+                                    } else if (elem.classList.contains("delete")) {//this will work when click on 'delete'
+                                        $('[data-toggle=confirmation]').confirmation("show");
+                                        $('[data-toggle=confirmation]').on("confirmed.bs.confirmation", function (event) {
+                                            event.stopImmediatePropagation();//this needed for stopping event
+                                            let inpId = parseInt(document.getElementById("userUpdate").value);
+                                            let trAll = document.getElementsByTagName("tr");
+                                            let className;
+                                            let userId;
+                                            let i, len = trAll.length;
+                                            for (i = 1; i < len; i++) {
+                                                if (parseInt(trAll[i].firstChild.getAttribute("data-add")) === inpId) {
+                                                    userId = trAll[i].firstChild.getAttribute("user-id");
+                                                    className=trAll[i];
+                                                }
+                                            }
+                                            let upload = "del=" + userId;
+                                            ajaxSend(upload, className);
+                                        });
+                                    }
+                                }
+                            });
+                        });
+                    } else {
+                        $("#userUpdate").tooltip("show");
+                        $("#userUpdate").focus();
+                    }
                 } else {
                     $("#userUpdate").tooltip("show");
                     $("#userUpdate").focus();
                 }
-            } else {
-                $("#userUpdate").tooltip("show");
-                $("#userUpdate").focus();
             }
+        };
+        function ajaxSend(data = "", del = "") {
+            var xmlhttprequest = new XMLHttpRequest();
+            xmlhttprequest.onreadystatechange = function () {
+                if (xmlhttprequest.readyState === 4) {
+                    if (xmlhttprequest.status === 200) {
+                        var response = xmlhttprequest.responseText;
+                        var patt = /^deleted!$/gm;
+                        if (response.match(patt).length > 0) {
+                            del.remove();
+                        } else {
+                            alert("Sorry something wonrged!");
+                        }
+                    }
+                }
+            };
+            xmlhttprequest.open("POST", "memberObject.php", true);
+            xmlhttprequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xmlhttprequest.send(data);
+        }
+        $(".active").on("click", function () {
+            $("input[name='newPass']").val("");
+            $("input[name='email']").val("");
+            //call tooltip if there are not any valid number
+            window.showToolTip.myToolTip(this);
         });
         //image show when choosen..........
         $("input[type='file']").on("change", function () {
@@ -142,7 +189,8 @@
                 $("select").val(json[0]["uWorld"]);
                 $("input[type='file']").val("");
                 $("input").css({"border-color": "#ced4da"});
-                $(".errAllShow").fadeOut("slow").text("");
+                let show = document.getElementsByClassName("errAllShow")[0];
+                show.style.visibility = "hidden";
                 formInput();
             }
         });
